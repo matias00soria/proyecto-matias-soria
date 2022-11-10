@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color:rgb(49, 211, 0);
+}
+
+.body__header__nav_ul{
+    list-style: none;
+    background-image: url(./imagenes/logo-gym.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:white;
+    width: auto;
+    height: 100px;
+    text-align: center;
+}
+
+.body__header__nav__ul_li{
+    display: inline-block;
+    padding-top: 25px;
+}
+
+.body__header__nav__ul__li_a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 200%;
+}
+
+.principal__section_h1{
+    text-align: center;
+    font-size: 300%;
+}
+
+.principal__section__article_div{
+    height: 100px;
+    text-align: center;
+    
+}
+
+.principal__section__article__div_a{
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: url(./imagenes/pesa.jpg);
+}
+
+.principal__article__div_img{
+    border: solid 10px;
+    background-color: blue;
+    padding: 5px;
+    width: 600px;
+    height: 600px;
+    
+}
+
+.footer__ul{
+    height: 100px;
+    text-align: center;
+}
+
+.footer__ul_li{
+    display: inline-block;
+    padding: 25px 25px;
+    font-size: 200%;
+}
