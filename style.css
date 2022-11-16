@@ -1,70 +1,106 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.body{
-    background-color:rgb(49, 211, 0);
+/*vista mobile*/
+
+#grid__principal{
+    background-color:rgba(209, 209, 209, 0.527);
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
 }
 
-.body__header__nav_ul{
-    list-style: none;
-    background-image: url(./imagenes/logo-gym.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color:white;
-    width: auto;
-    height: 100px;
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.t-center{
     text-align: center;
-}
-
-.body__header__nav__ul_li{
-    display: inline-block;
-    padding-top: 25px;
-}
-
-.body__header__nav__ul__li_a{
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    font-weight: bold;
-    padding: 10px;
-    font-size: 200%;
-}
-
-.principal__section_h1{
-    text-align: center;
-    font-size: 300%;
 }
 
 .principal__section__article_div{
-    height: 100px;
-    text-align: center;
-    
+    margin-bottom: 50px;
 }
 
-.principal__section__article__div_a{
-    font-size: 200%;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    background-image: url(./imagenes/pesa.jpg);
+.principal__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.principal__article__div_img{
-    border: solid 10px;
-    background-color: blue;
-    padding: 5px;
-    width: 600px;
-    height: 600px;
-    
+.principal__article div{
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid black ;
+}
+
+.img-modificacion{
+    width: 500px;
+    height: 500px;
 }
 
 .footer__ul{
-    height: 100px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.footer__ul_li{
-    display: inline-block;
-    padding: 25px 25px;
-    font-size: 200%;
+li{
+    list-style: none;
 }
+
+.footer-img{
+    width: 60px;
+    height: 60px;
+}
+
+
+/*vista tablet*/
+
+@media screen and (min-width: 768px) {
+    #grid__principal{
+        background-color:rgba(209, 209, 209, 0.781);
+        grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer ';
+    }
+
+    .principal__section__article_div{
+        font-size: 200%;
+        margin: 100px;
+    }
+
+    .principal__article{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+/*vista destop*/
+
+@media screen and (min-width: 1024px) {
+    #grid__principal{
+        background-color:rgb(209, 209, 209);
+    }
+}
+
