@@ -37,10 +37,10 @@ footer{
 .principal__article{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-.principal__article div{
+.principal__article_div{
     padding: 15px;
     margin: 5px;
     border: 1px solid black ;
@@ -73,6 +73,7 @@ li{
 @media screen and (min-width: 768px) {
     #grid__principal{
         background-color:rgba(209, 209, 209, 0.781);
+        overflow: auto;
         grid-template-areas:
     'header header header'
     'main main main'
@@ -87,7 +88,6 @@ li{
     .principal__article{
         display: flex;
         flex-direction: row;
-        align-items: center;
     }
 
     .footer__ul{
@@ -102,6 +102,7 @@ li{
 @media screen and (min-width: 1024px) {
     #grid__principal{
         background-color:rgb(209, 209, 209);
+        overflow: hidden;
     }
 }
 
