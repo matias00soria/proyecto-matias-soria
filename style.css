@@ -9,6 +9,7 @@
 #grid__principal{
     background-color:rgba(209, 209, 209, 0.527);
     display: grid;
+    overflow: hidden;
     grid-template-areas:
     'header'
     'main'
